@@ -57,6 +57,7 @@ void geom::find_circles(const std::vector<point>& P, int M, std::vector<int>& An
             Ans[2] = 2;
             if (P.size() == 4)
                 Ans[3] = 2;
+            return;
         }
         details::circle c;
         for (size_t i = 0; i < 5; ++i)
@@ -110,6 +111,7 @@ void geom::find_circles(const std::vector<point>& P, int M, std::vector<int>& An
                 Ans[4] = 3;
             if (P.size() >= 6)
                 Ans[5] = 3;
+            return;
         }
 
         if (P.size() == 7) {  //P.size() >= 3
@@ -135,6 +137,7 @@ void geom::find_circles(const std::vector<point>& P, int M, std::vector<int>& An
                     Ans[i] = 3;
                     t++;
                 }
+            return;
         }
 
         details::circle c1, c2;

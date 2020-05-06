@@ -1,4 +1,5 @@
 ﻿#include <iostream>
+#include "geom.hpp"
 #include "test.hpp"
 
 int main()
